@@ -1,60 +1,66 @@
-Overview
-========
+# Overview
 
 Libdivecomputer is a cross-platform and open source library for
 communication with dive computers from various manufacturers.
 
 The official web site is:
 
-  http://www.libdivecomputer.org/
+  <http://www.libdivecomputer.org/>
 
 The sourceforge project page is:
 
-  http://sourceforge.net/projects/libdivecomputer/
+  <http://sourceforge.net/projects/libdivecomputer/>
 
-Installation
-============
+## Installation
 
 On UNIX-like systems (including Linux, Mac OS X, MinGW), use the
 autotools based build system. Run the following commands from the top
 directory (containing this file) to configure, build and install the
 library and utilities:
 
+```shell
   $ ./configure
   $ make
   $ make install
+```
 
 If you downloaded the libdivecomputer source code directly from the git
 source code repository, then you need to create the configure script as
 the first step:
 
+```shell
   $ autoreconf --install
+```
 
 To uninstall libdivecomputer again, run:
 
+```shell
   $ make uninstall
+```
   
 On Windows using Visual Studio Install the msys2 toolset and from its command line in repository root directory run:
+
+```shell
   $ pacman -S autoconf automake libtool pkg-config make gcc
   $ autoreconf --install --force
   $ ./configure --prefix=/usr
   $ make
+```
  
 Than you should be able compile within visual studio.
+To debug select native code debugging in "Attach to" option.
 
-Support
-=======
+## Support
 
 Please send bug reports, feedback or questions to the mailing list:
 
-  http://libdivecomputer.org/cgi-bin/mailman/listinfo/devel
+  <http://libdivecomputer.org/cgi-bin/mailman/listinfo/devel>
 
 or contact me directly:
 
-  jef@libdivecomputer.org
+  <jef@libdivecomputer.org>
 
-License
-=======
+## License
 
 Libdivecomputer is free software, released under the terms of the GNU
 Lesser General Public License (LGPL).
