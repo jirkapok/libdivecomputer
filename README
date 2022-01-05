@@ -33,6 +33,14 @@ the first step:
 To uninstall libdivecomputer again, run:
 
   $ make uninstall
+  
+On Windows using Visual Studio Install the msys2 toolset and from its command line in repository root directory run:
+  $ pacman -S autoconf automake libtool pkg-config make gcc
+  $ autoreconf --install --force
+  $ ./configure --prefix=/usr
+  $ make
+ 
+Than you should be able compile within visual studio.
 
 Support
 =======
