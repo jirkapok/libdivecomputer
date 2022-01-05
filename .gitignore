@@ -56,3 +56,6 @@ Makefile.in
 /src/libdivecomputer.la
 /src/libdivecomputer.rc
 /src/revision.h
+
+.vs
+*.user
